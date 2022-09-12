@@ -46,7 +46,7 @@ export default class IndexPage extends HTMLElement {
 
           
           <section class="gif-sec">
-            <h3> Si tu demandes d'abord "est ce que il y a uelqu'un", si on te repond "oui" 2h plus tard et que t'es pas là, il faut qu'on attende que tu repondes, pour <u>PEUT ETRE</u> savoir ce que tu veux. T'es gentil mais </h3>
+            <h3> Si tu demandes d'abord "est ce que il y a quelqu'un", si on te repond "oui" 2h plus tard et que t'es pas là, il faut qu'on attende que tu repondes, pour <u>PEUT ETRE</u> savoir ce que tu veux. T'es gentil mais </h3>
             <img id="magne">
           </section>
 
