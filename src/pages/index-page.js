@@ -9,6 +9,8 @@ import marche from '../assets/question/offre-demande.gif';
 import pose from '../assets/question/pose-question.gif';
 import magne from '../assets/question/pas-time.gif';
 import toi from '../assets/question/compte-sur-toi.gif';
+import connait from '../assets/question/kisiconnait.gif';
+import kitu from '../assets/question/ki-tu-es.gif';
 //scss
 
 
@@ -20,8 +22,19 @@ export default class IndexPage extends HTMLElement {
       this,
       `<my-header h1title="Pose ta question... bordel !!"></my-header>
         <main>
-        <h2>Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: "J'ai une question, y a quelqu'un pour m'aider?"</h2>
-         <h3>Ce qu'on a envie de te dire c'est :</h3>
+        <h2>Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: "J'ai une question, y a quelqu'un qui s'y connait pour m'aider?"</h2>
+          <h3>Ce qu'on a envie de te dire c'est :</h3>
+
+          <section class="gif-sec">
+            <h3></h3>
+            <img id="connait">
+          </section>
+
+          <section class="gif-sec">
+            <h3>Parce que en vérité</h3>
+            <img id="kitu">
+          </section>
+
           <section class="gif-sec">
             <h3>Hey! T'sais quoi?!</h3>
             <img id="baffe">
@@ -66,6 +79,8 @@ export default class IndexPage extends HTMLElement {
         dGEBId('pose').src = pose;
         dGEBId('magne').src = magne;
         dGEBId('toi').src = toi;
+        dGEBId('connait').src = connait;
+        dGEBId('kitu').src= kitu;
     }
 
     connectedCallback() {}

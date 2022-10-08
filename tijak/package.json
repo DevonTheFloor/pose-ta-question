@@ -1,20 +1,21 @@
 {
   "name": "tijak",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Library for Vite.js with vanilla template for create multi-pages SPA",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tijak",
-    "vitejs",
+    "vite-js",
     "multi-page",
     "spa"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DevonTheFloor/tikaj"
+    "url": "https://github.com/DevonTheFloor/tijak"
   },
   "author": "Oim-D",
   "license": "ISC"
