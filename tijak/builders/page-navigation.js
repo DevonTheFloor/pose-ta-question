@@ -21,7 +21,6 @@ export function navigator() {
 
 function mapForHashUrl(url) {
   let pa = mapping.find(p => p.uri === url);
-  console.log('PA :', pa);
   if (pa === undefined ) {
     setTimeout(()=> {
       window.location.assign('#/');
