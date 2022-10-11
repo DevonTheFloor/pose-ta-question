@@ -18,7 +18,7 @@ export default class IndexPage extends HTMLElement {
     super();
     mountingPageElements(
       this,
-      `<my-header h1title="Pose ta question... bordel !!"></my-header>
+      `<my-header h1title="Pose ta question !"></my-header>
         <main>
         <h2>Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: "J'ai une question, y a quelqu'un qui s'y connait pour m'aider?"</h2>
           <h3>Ce qu'on a envie de te dire c'est :</h3>
