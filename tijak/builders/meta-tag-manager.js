@@ -5,7 +5,7 @@ export function defineNewTitle(newTitle) {
 }
 
 export function defineMetaTagsPage(ogTags, cardTags) {
-  const header = dQySr('head');
+  const header = dQSr('head');
   ogTags.forEach(data => {
     const meta = dCrEl('meta');
     meta.setAttribute('property', `${data.value}`);

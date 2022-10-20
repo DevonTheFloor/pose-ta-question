@@ -1,3 +1,5 @@
+//plus d'actualité, conçu pour créer un TagForComponent qui permetterai la diplicité des composants, sans colision des attribut.
+
 export const crateAttributFor = {
   Title1: (markup, idTag, context) =>{
     const titre = context.getAttribute('h1-'+idTag);

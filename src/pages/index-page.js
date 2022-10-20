@@ -1,5 +1,6 @@
 import { mountingPageElements } from "../../tijak/builders/mounting-page";
 import { dGEBId, dQSAl } from "../../tijak/helpers/myDomHelper";
+import { defineMetaTagsPage } from "../../tijak/builders/meta-tag-manager";
 
 //assets images
 import baffe from '../assets/question/question.gif';
@@ -16,6 +17,22 @@ export default class IndexPage extends HTMLElement {
   constructor() {
     // Always call super first in constructor
     super();
+    const ogg = [
+      { value: "og:title", content: "Pose Ta Question !"},
+      { value: "og:type", content: "Web Site"},
+      { value: "og:url", content: "https://posetaquestion.fr"},
+      { value: "og:image", content: ""},
+      { value: "og:description", content: "Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: J'ai une question, y a quelqu'un qui s'y connait pour m'aider?"}
+    ]
+    const card = [
+      { value: "twitter:card", content: "summary"},
+      { value: "twitter:title", content: "Pose ta question"},
+      { value: "twitter:site", content: "@publisher_handle"},
+      { value: "twitter:creator", content: "@floor_dev"},
+      { value: "twitter:image", content: ""},
+      { value: "description", content: "Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: J'ai une question, y a quelqu'un qui s'y connait pour m'aider?"}
+    ]
+    defineMetaTagsPage(ogg, card);
     mountingPageElements(
       this,
       `<my-header h1title="Pose ta question !"></my-header>
@@ -75,8 +92,7 @@ export default class IndexPage extends HTMLElement {
     connectedCallback() {}
     disconnectedCallback() {}
     adoptedCallback() {}
-    attributeChangedCallback(name, oldValue, newValue) {}
-    
+    attributeChangedCallback(name, oldValue, newValue) {}   
   }
   customElements.define('index-page', IndexPage);
 
