@@ -1,6 +1,5 @@
 import { mountingPageElements } from "../../tijak/builders/mounting-page";
-import { dGEBId, dQSAl } from "../../tijak/helpers/myDomHelper";
-import { defineMetaTagsPage } from "../../tijak/builders/meta-tag-manager";
+import { dGEBId } from "../../tijak/helpers/myDomHelper";
 
 //assets images
 import connait from '../assets/question/kisiconnait.gif';
