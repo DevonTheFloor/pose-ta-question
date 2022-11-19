@@ -64,6 +64,10 @@
       width: 100%;
       margin: 15% auto;
       border: 1px solid grey;
+      & figure {
+        margin: 0px;
+        width: 100%;
+      }
       & img {
         margin: 5% auto;
         width: 100%;
