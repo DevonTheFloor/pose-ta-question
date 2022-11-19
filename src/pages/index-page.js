@@ -17,7 +17,7 @@ export default class IndexPage extends HTMLElement {
     super();
     mountingPageElements(
       this,
-      `<my-header h1title="Pose ta question !"></my-header>
+      `<my-header h1title="Pose ta question."></my-header>
         <main>
         <h2>Quand t'es sur un réseau social d'entraide et que tu cherches quelqu'un pour t'aider en demandant: "J'ai une question, y a quelqu'un qui s'y connait pour m'aider?"</h2>
           <h3>Ce qu'on a envie de te dire c'est :</h3>
@@ -70,37 +70,37 @@ export default class IndexPage extends HTMLElement {
         </main>
         `);
 
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
           'first-sec',
           'baffe',
           "https://posetaquestion.fr/my-assets/server_assets/ptq/question.gif",
           'appear'
         );
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
           'seconde-sec',
           'detente',
           "https://posetaquestion.fr/my-assets/server_assets/ptq/repondra-repondra.gif",
           'appear'
         );
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
           'third-sec',
           'marche',
           "https://posetaquestion.fr/my-assets/server_assets/ptq/offre-demande.gif",
           'appear'
         );
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
           'fourth-sec',
           'pose',
           "https://posetaquestion.fr/my-assets/server_assets/ptq/pose-question.gif",
           'appear'
         );
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
           'five-sec',
           'magne',
           "https://posetaquestion.fr/my-assets/server_assets/ptq/pas-time.gif",
           'appear'
         );
-        observAddAttribute(0.7,
+        observAddAttribute(0.5,
             'six-sec',
             'toi',
             "https://posetaquestion.fr/my-assets/server_assets/ptq/compte-sur-toi.gif",
