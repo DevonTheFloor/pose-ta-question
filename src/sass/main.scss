@@ -36,10 +36,16 @@
   .gif-sec {
     margin: 10%;
     border: 2px solid grey;
+    & h3 {
+      padding: 3%;
+    }
     & img {
       margin: 1%;
-      width: 50%;
+      width: 60%;
     }
+  }
+  .appear {
+    opacity: 1;
   }
   @media screen and (max-width: 800px) {
     .gif-sec {
