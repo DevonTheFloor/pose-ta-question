@@ -2,8 +2,8 @@ import { mountingPageElements } from "../../tijak/builders/mounting-page";
 import { dGEBId } from "../../tijak/helpers/myDomHelper";
 import observAddAttribute from '../js/observAddAttribute';
 //assets images
-/*import connait from '../assets/question/kisiconnait.gif';
-import baffe from '../assets/question/question.gif';
+import connait from '../assets/question/kisiconnait.gif';
+/*import baffe from '../assets/question/question.gif';
 import detente from '../assets/question/repondra-repondra.gif';
 import marche from '../assets/question/offre-demande.gif';
 import pose from '../assets/question/pose-question.gif';
@@ -25,7 +25,7 @@ export default class IndexPage extends HTMLElement {
           <section class="gif-sec">
             <h3>On ne sait pas quel niveau tu as, alors quand tu demandes quelqu'un qui s'y connait, nous on pense ça:</h3>
             <figure>
-              <img src="https://posetaquestion.fr/my-assets/server_assets/ptq/kisiconnait.gif">
+              <img id="connait">
             </figure>
           </section>
 
@@ -69,7 +69,7 @@ export default class IndexPage extends HTMLElement {
           <h5>Bisous</h5>
         </main>
         `);
-
+        dGEBId('connait').src = connait;
         observAddAttribute(0.5,
           'first-sec',
           'baffe',
