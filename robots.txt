@@ -1,0 +1,29 @@
+# Certain social media sites are whitelisted to allow crawlers to access page markup when links to /images are shared. 
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Every bot that might possibly read and respect this file
+# ========================================================
+User-agent: *
+Allow: /*?lang=
+Allow: /hashtag/*?src=
+Allow: /search?q=%23
+Disallow: /search/realtime
+Disallow: /search/users
+Disallow: /search/*/grid
+
+Disallow: /*?
+Disallow: /*/followers
+Disallow: /*/following
+
+Disallow: /account/deactivated
+Disallow: /settings/deactivated
+
+Disallow: /oauth
+Disallow: /1/oauth
+
+Disallow: /i/streams
+Disallow: /i/hello
