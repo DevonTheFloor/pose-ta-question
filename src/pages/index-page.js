@@ -15,6 +15,7 @@ export default class IndexPage extends HTMLElement {
   constructor() {
     // Always call super first in constructor
     super();
+    const baseUrl = 'https://posetaquestion.fr/my-assets/ptq/';
     mountingPageElements(
       this,
       `<my-header h1title="Pose ta question."></my-header>
@@ -73,37 +74,37 @@ export default class IndexPage extends HTMLElement {
         observAddAttribute(0.5,
           'first-sec',
           'baffe',
-          "https://posetaquestion.fr/my-assets/server_assets/ptq/question.gif",
+          `${baseUrl}question.gif`,
           'appear'
         );
         observAddAttribute(0.5,
           'seconde-sec',
           'detente',
-          "https://posetaquestion.fr/my-assets/server_assets/ptq/repondra-repondra.gif",
+          `${baseUrl}repondra-repondra.gif`,
           'appear'
         );
         observAddAttribute(0.5,
           'third-sec',
           'marche',
-          "https://posetaquestion.fr/my-assets/server_assets/ptq/offre-demande.gif",
+          `${baseUrl}offre-demande.gif`,
           'appear'
         );
         observAddAttribute(0.5,
           'fourth-sec',
           'pose',
-          "https://posetaquestion.fr/my-assets/server_assets/ptq/pose-question.gif",
+          `${baseUrl}pose-question.gif`,
           'appear'
         );
         observAddAttribute(0.5,
           'five-sec',
           'magne',
-          "https://posetaquestion.fr/my-assets/server_assets/ptq/pas-time.gif",
+          `${baseUrl}pas-time.gif`,
           'appear'
         );
         observAddAttribute(0.5,
             'six-sec',
             'toi',
-            "https://posetaquestion.fr/my-assets/server_assets/ptq/compte-sur-toi.gif",
+            `${baseUrl}compte-sur-toi.gif`,
             'appear'
         );
     }
