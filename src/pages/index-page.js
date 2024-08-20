@@ -10,6 +10,7 @@ import pose from '../assets/question/pose-question.gif';
 import magne from '../assets/question/pas-time.gif';
 import toi from '../assets/question/compte-sur-toi.gif';*/
 //scss
+import CompoTest from "../components/compoTest/compo-test";
 
 export default class IndexPage extends HTMLElement {
   constructor() {
@@ -30,42 +31,19 @@ export default class IndexPage extends HTMLElement {
             </figure>
           </section>
 
+          <compo-test 
+            id="compotest" *
+            class="compotest"
+            h1-gros="Gros Titre"
+            p-paragraphe="Que j'aime à faire apprendre ce nombre utile aux sages"
+          >
+          </compo-test>
           <rest-in-gif
             secId="first-sec"
             h3txt="Apres s'être pris la tête un quart d'heure à se demander si on a le level pour t'aider, on a bien envie de te dire ça:"
             imaId="baffe"
           ></rest-in-gif>
          
-          <rest-in-gif
-            secId="seconde-sec"
-            h3txt="Aussi parce qu'on ne sait pas quand est ce qu'on verra ton message, on est pas un SAV, on ne te doit rien."
-            imaId="detente"
-          ></rest-in-gif>
-
-          <rest-in-gif
-            secId="third-sec"
-            h3txt="Si t'as pas envie que, dans le meilleur des cas, ton message reste lettre morte."
-            imaId="marche"
-          ></rest-in-gif>
-          
-          <rest-in-gif
-            secId="fourth-sec"
-            h3txt="Tu conviendras que"
-            imaId="pose"
-          ></rest-in-gif>
-
-          <rest-in-gif
-            secId="five-sec"
-            h3txt="Si tu demandes d'abord: est ce que il y a quelqu'un, si on te repond oui 2h plus tard et que t'es pas là, il faut qu'on attende que tu repondes, pour PEUT ETRE savoir ce que tu veux. T'es gentil mais"
-            imaId="magne"
-          ></rest-in-gif>
-
-          <rest-in-gif
-            secId="six-sec"
-            h3txt="Merci de ta comprehension"
-            imaId="toi"
-          ></rest-in-gif>
-
           <h4>Cordialement</h4>
           <h5>Bisous</h5>
         </main>
